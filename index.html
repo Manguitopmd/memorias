@@ -252,6 +252,21 @@
         .audio-player audio { 
             display: none; /* Ocultar controles nativos, usar botón personalizado */
         }
+        footer { 
+            text-align: center; 
+            font-size: 0.875rem; 
+            color: var(--text-color); 
+            padding: 1rem 0; 
+        }
+        footer a { 
+            color: var(--accent-color); 
+            text-decoration: none; 
+            transition: color 0.3s ease; 
+        }
+        footer a:hover { 
+            color: var(--button-hover); 
+            text-decoration: underline; 
+        }
         @media (min-width: 769px) {
             .container { padding: 2rem 1rem; }
             .section, .time-section { padding: 2.5rem; }
@@ -293,15 +308,10 @@
             <h2 class="text-xl md:text-2xl mb-4">Mi Historia</h2>
             <div id="history-container">
                 <p class="history-chapter">Abraham Yovera fue un hombre que llevó el trabajo en las manos y la determinación en el corazón. Desde muy joven entendió que la vida se construye con esfuerzo, y con esa certeza partió en busca de su destino. En Lima encontró su primer oficio, hilando sueños entre hilos y agujas. Como costurero, aprendió la paciencia del artesano y el valor de cada puntada bien dada. Pero su alma inquieta anhelaba más, y el destino lo guió a Talara, la tierra donde echaría raíces y donde, con amor y valentía, construiría su verdadera historia.</p>
-
-<p class="history-chapter">En Talara, el trabajo duro fue su fiel compañero. Primero se convirtió en arrocero, sembrando no solo granos, sino también esperanza. Cada cosecha le enseñó que la tierra, al igual que la vida, recompensa a quienes la cuidan con esmero. Pero su espíritu emprendedor lo llevó más allá, y pronto encontró en el comercio de abarrotes una nueva manera de servir a su comunidad. Con una sonrisa amable y palabras de aliento, atendía a cada cliente como si fuera parte de su familia. No vendía solo productos, entregaba confianza, amistad y el calor de un hogar.</p>
-
-<p class="history-chapter">Más allá de sus negocios, su mayor tesoro siempre fueron sus hijos. Para él, no había riqueza más grande que su amor ni legado más valioso que la educación. Creía que el esfuerzo era la mejor lección y que la honestidad era el camino más noble. Con manos trabajadoras y un corazón generoso, les enseñó a construir sus propios sueños, mostrándoles que la verdadera fortuna no está en lo que se tiene, sino en lo que se entrega.</p>
-
-<p class="history-chapter">A lo largo de su vida, muchos le repetían una frase que quedó grabada en la memoria de quienes lo conocieron: "Abraham como Abraham, nunca habrán". Y no era un simple halago, era la verdad. Único, valiente, inquebrantable. Su legado no solo está en los negocios que levantó con su esfuerzo, sino en cada mirada agradecida, en cada historia compartida y en cada corazón que encontró en él un ejemplo de vida.</p>
-
-<p class="history-chapter">Hoy, aunque su presencia física ya no esté, su esencia sigue viva. En las risas de sus hijos, en el aroma del arroz recién cosechado, en las calles de Talara que tantas veces recorrió. Porque hay personas que no se van, solo cambian de forma y se quedan para siempre en el alma de quienes los amaron.</p>
-
+                <p class="history-chapter">En Talara, el trabajo duro fue su fiel compañero. Primero se convirtió en arrocero, sembrando no solo granos, sino también esperanza. Cada cosecha le enseñó que la tierra, al igual que la vida, recompensa a quienes la cuidan con esmero. Pero su espíritu emprendedor lo llevó más allá, y pronto encontró en el comercio de abarrotes una nueva manera de servir a su comunidad. Con una sonrisa amable y palabras de aliento, atendía a cada cliente como si fuera parte de su familia. No vendía solo productos, entregaba confianza, amistad y el calor de un hogar.</p>
+                <p class="history-chapter">Más allá de sus negocios, su mayor tesoro siempre fueron sus hijos. Para él, no había riqueza más grande que su amor ni legado más valioso que la educación. Creía que el esfuerzo era la mejor lección y que la honestidad era el camino más noble. Con manos trabajadoras y un corazón generoso, les enseñó a construir sus propios sueños, mostrándoles que la verdadera fortuna no está en lo que se tiene, sino en lo que se entrega.</p>
+                <p class="history-chapter">A lo largo de su vida, muchos le repetían una frase que quedó grabada en la memoria de quienes lo conocieron: "Abraham como Abraham, nunca habrán". Y no era un simple halago, era la verdad. Único, valiente, inquebrantable. Su legado no solo está en los negocios que levantó con su esfuerzo, sino en cada mirada agradecida, en cada historia compartida y en cada corazón que encontró en él un ejemplo de vida.</p>
+                <p class="history-chapter">Hoy, aunque su presencia física ya no esté, su esencia sigue viva. En las risas de sus hijos, en el aroma del arroz recién cosechado, en las calles de Talara que tantas veces recorrió. Porque hay personas que no se van, solo cambian de forma y se quedan para siempre en el alma de quienes los amaron.</p>
             </div>
             <div class="history-controls">
                 <button id="prevChapter"><i class="fas fa-arrow-left"></i> Anterior</button>
@@ -391,8 +401,7 @@
         <!-- Últimas Palabras -->
         <section class="section text-center" data-aos="fade-up">
             <h2 class="text-xl md:text-2xl mb-4">Siempre en Nuestro Corazón</h2>
-<p class="bio-text">Tu luz y tu amor perdurarán en cada recuerdo, en cada enseñanza y en cada sonrisa que nos regalaste. Aunque no estés físicamente con nosotros, tu esencia seguirá acompañándonos siempre. Descansa en paz, hasta que nuestros caminos se crucen nuevamente.</p>
-
+            <p class="bio-text">Tu luz y tu amor perdurarán en cada recuerdo, en cada enseñanza y en cada sonrisa que nos regalaste. Aunque no estés físicamente con nosotros, tu esencia seguirá acompañándonos siempre. Descansa en paz, hasta que nuestros caminos se crucen nuevamente.</p>
         </section>
 
         <!-- Separador final -->
@@ -406,6 +415,11 @@
         <div class="special-quote">
             <p>"Porque Abraham como Abraham, nunca habrán"</p>
         </div>
+
+        <!-- Footer -->
+        <footer>
+            © 2025 Memorial de Abraham Yovera Vílchez. Todos los derechos reservados. Hecho por <a href="https://manguitopmd.github.io/biolink/" target="_blank">Manguito PMT</a>.
+        </footer>
     </div>
 
     <!-- Botón de música -->
