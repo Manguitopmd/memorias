@@ -126,7 +126,7 @@ function showNextMessage() {
 setInterval(showNextMessage, 8000);
 
 // Tiempo desde el fallecimiento
-const deathDate = new Date('2023-03-24'); // Fecha de ejemplo, cámbiala por la real
+const deathDate = new Date('2020-06-06'); // Fecha de ejemplo, cámbiala por la real
 const timeSinceElement = document.getElementById('time-since');
 
 function updateTimeSince() {
